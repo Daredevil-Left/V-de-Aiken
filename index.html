@@ -60,6 +60,39 @@
             <p class="mt-2 text-lg text-slate-600">Una herramienta para validar la pertinencia de ítems mediante juicio de expertos.</p>
         </header>
 
+        <div class="bg-white p-6 rounded-xl shadow-lg mb-8">
+            <h2 class="text-2xl font-bold mb-4 text-slate-900">¿Qué es el Coeficiente V de Aiken?</h2>
+            <div class="space-y-4 text-slate-600">
+                <p>
+                    El coeficiente V de Aiken es un índice de validez de contenido que cuantifica la relevancia de los ítems de un test con respecto a un dominio de contenido, evaluada por un grupo de jueces expertos. Este coeficiente permite determinar si un ítem es adecuado para formar parte de una prueba.
+                </p>
+                <div>
+                    <h3 class="font-bold text-lg mb-2">Fórmula Matemática</h3>
+                    <div class="bg-slate-100 p-4 rounded-lg text-center text-lg font-mono">
+                        V = (X̄ - l) / k
+                    </div>
+                    <p class="mt-2 text-sm">Donde:</p>
+                    <ul class="list-disc list-inside mt-2 space-y-1">
+                        <li><span class="font-semibold">X̄ (X barra):</span> Es el promedio de las puntuaciones de los jueces para el ítem.</li>
+                        <li><span class="font-semibold">l:</span> Es la puntuación más baja posible en la escala de valoración.</li>
+                        <li><span class="font-semibold">k:</span> Es el rango de la escala de valoración, calculado como la diferencia entre la puntuación más alta y la más baja (puntuación máxima - l).</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-2">Interpretación del Coeficiente</h3>
+                    <p>
+                        El valor del coeficiente V de Aiken oscila entre 0 y 1. Un valor más cercano a 1 indica una mayor validez de contenido y un mayor acuerdo entre los jueces sobre la pertinencia del ítem. Aunque no hay un punto de corte único y universalmente aceptado, se suelen utilizar los siguientes criterios:
+                    </p>
+                    <ul class="list-disc list-inside mt-2 space-y-1">
+                        <li><span class="font-semibold text-emerald-700">V ≥ 0.80:</span> El ítem se considera válido y adecuado.</li>
+                        <li><span class="font-semibold text-sky-700">0.70 ≤ V &lt; 0.80:</span> El ítem es aceptable pero podría ser mejorado.</li>
+                        <li><span class="font-semibold text-amber-700">0.60 ≤ V &lt; 0.70:</span> El ítem necesita una revisión sustancial.</li>
+                        <li><span class="font-semibold text-red-700">V &lt; 0.60:</span> El ítem probablemente debería ser eliminado.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <!-- Columna de Configuración y Acciones -->
             <div class="lg:col-span-1 space-y-6">
